@@ -9,6 +9,11 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // ===================
+// Signing
+// ===================
+CODE_SIGN_ENTITLEMENTS=Parrotflow/Parrotflow.entitlements
+
+// ===================
 // Packaging
 // ===================
 GENERATE_INFOPLIST_FILE = YES

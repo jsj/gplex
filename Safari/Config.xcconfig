@@ -1,6 +1,6 @@
 //
 //  Config.xcconfig
-//  Parrotflow
+//  Safari Extension
 //
 //  Created by James Jackson on 7/1/23.
 //
@@ -9,7 +9,14 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // ===================
+// Signing
+// ===================
+CODE_SIGN_ENTITLEMENTS=Safari/Safari.entitlements
+
+// ===================
 // Packaging
 // ===================
+GENERATE_INFOPLIST_FILE = YES
 PRODUCT_NAME = $(TARGET_NAME)
-PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.uitests
+PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.mac.safari
+INFOPLIST_FILE = Safari/Info.plist

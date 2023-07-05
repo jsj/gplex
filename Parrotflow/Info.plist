@@ -8,5 +8,34 @@
 	<string>public.app-category.productivity</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Plain Text</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.text</string>
+                <string>public.plain-text</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>PDF</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.pdf</string>
+                <string>com.adobe.pdf</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>
