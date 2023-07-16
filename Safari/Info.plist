@@ -8,6 +8,11 @@
 		<string>com.apple.Safari.extension</string>
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
+		<key>SFSafariWebsiteAccess</key>
+		<dict>
+			<key>Level</key>
+			<string>None</string>
+		</dict>
 		<key>SFSafariToolbarItem</key>
 		<dict>
 			<key>Action</key>
