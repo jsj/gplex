@@ -49,6 +49,7 @@ struct ContentView: View {
                             return
                         }
                         openURL(encodedURL)
+                        NSApplication.shared.terminate(self)
                     }
                 }
             }

@@ -28,11 +28,12 @@ struct Parrotflow: App {
                         return
                     }
                     openURL(encodedURL)
+                    NSApplication.shared.terminate(self)
                 }
         }
         .commands {
             CommandGroup(before: .saveItem) {
-                Button("Open File") {
+                Button("Open a file") {
                     guard let url = Finder.showOpenPanel() else { return }
                     guard let content = Finder.readContent(from: url),
                           let baseURL = URL(string: "http://chat.parrotflow.com") else {
@@ -45,6 +46,7 @@ struct Parrotflow: App {
                         return
                     }
                     openURL(encodedURL)
+                    NSApplication.shared.terminate(self)
                 }
                 .keyboardShortcut("o", modifiers: .command)
             }
