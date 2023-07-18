@@ -27,7 +27,7 @@ struct ContentView: View {
                     .blendMode(.plusLighter)
                 HStack {
                     Button("Get Shortcut") {
-                        openURL(URL(string: "http://parrotflow.com/shortcut")!)
+                        openURL(URL(string: "https://parrotflow.com/shortcut")!)
                     }
                     .accentColor(.indigo)
                     .buttonStyle(.borderedProminent)
@@ -37,14 +37,14 @@ struct ContentView: View {
                     .accentColor(.blue)
                     .buttonStyle(.borderedProminent)
                     Button("Enable Chrome Extension") {
-                        openURL(URL(string: "http://parrotflow.com/chrome")!)
+                        openURL(URL(string: "https://parrotflow.com/chrome")!)
                     }
                     .accentColor(.red)
                     .buttonStyle(.borderedProminent)
                     Button("Open a file") {
                         guard let url = Finder.showOpenPanel() else { return }
                         guard let content = Finder.readContent(from: url),
-                              let baseURL = URL(string: "http://chat.parrotflow.com") else {
+                              let baseURL = URL(string: "https://chat.parrotflow.com") else {
                             return
                         }
                         var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
