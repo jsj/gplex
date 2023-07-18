@@ -11,7 +11,7 @@ import CoreGraphics
 
 struct ContentView: View {
     
-    static let extensionID = "com.parrotflow.mac.safari"
+    static let safariExtensionID = "com.parrotflow.mac.safari"
     
     @Environment(\.openURL) var openURL
     
@@ -32,9 +32,14 @@ struct ContentView: View {
                     .accentColor(.indigo)
                     .buttonStyle(.borderedProminent)
                     Button("Enable Safari Extension") {
-                        SFSafariApplication.showPreferencesForExtension(withIdentifier: Self.extensionID)
+                        SFSafariApplication.showPreferencesForExtension(withIdentifier: Self.safariExtensionID)
                     }
                     .accentColor(.blue)
+                    .buttonStyle(.borderedProminent)
+                    Button("Enable Chrome Extension") {
+                        openURL(URL(string: "http://parrotflow.com/chrome")!)
+                    }
+                    .accentColor(.red)
                     .buttonStyle(.borderedProminent)
                     Button("Open a file") {
                         guard let url = Finder.showOpenPanel() else { return }
