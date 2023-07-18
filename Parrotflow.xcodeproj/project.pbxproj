@@ -48,6 +48,9 @@
 		1A84DEF32A50AFBD005FC7D1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1A84DEF62A50B28C005FC7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A84DEF82A50B2A4005FC7D1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		1AA5C9202A66EF5200C3C7D8 /* service-worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "service-worker.js"; sourceTree = "<group>"; };
+		1AA5C9212A66EF5200C3C7D8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1AA5C9222A66EF5200C3C7D8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		1AD56CB42A5A2CEE00E94A33 /* Finder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
 		1AF510872A631F7600CEA0ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AF5108D2A6320E100CEA0ED /* Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,7 @@
 				1AF511272A635C2B00CEA0ED /* LICENSE.txt */,
 				1A84DEC72A50AF35005FC7D1 /* Parrotflow */,
 				1AF5108E2A6320E100CEA0ED /* Safari */,
+				1AA5C91F2A66EF4300C3C7D8 /* Chrome */,
 				1A84DEC62A50AF35005FC7D1 /* Products */,
 				1A7C732E2A51E796008147A8 /* Frameworks */,
 			);
@@ -127,6 +131,16 @@
 				1A84DED12A50AF36005FC7D1 /* Parrotflow.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AA5C91F2A66EF4300C3C7D8 /* Chrome */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5C9212A66EF5200C3C7D8 /* icon.png */,
+				1AA5C9222A66EF5200C3C7D8 /* manifest.json */,
+				1AA5C9202A66EF5200C3C7D8 /* service-worker.js */,
+			);
+			path = Chrome;
 			sourceTree = "<group>";
 		};
 		1AF5108E2A6320E100CEA0ED /* Safari */ = {
@@ -398,7 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -406,8 +420,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.4;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -423,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -431,8 +445,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.4;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,7 +461,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -460,8 +474,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -483,7 +497,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -495,8 +509,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
