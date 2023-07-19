@@ -1,6 +1,6 @@
 # Parrotflow 🦜🌊
 
-> Superhuman for ChatGPT
+> Copilot for your Mac
 
 [![apple-shortcut](/.README/assets/badges/apple-shortcut.svg)](https://parrotflow.com/shortcut)
 [![safari-extension](/.README/assets/badges/safari-extension.svg)](https://parrotflow.com)
