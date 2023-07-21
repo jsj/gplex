@@ -1,14 +1,21 @@
 {
-  "name": "Parrotflow",
-  "description": "Chat your data",
+  "name": "Chat with Parrotflow",
+  "description": "Use the context menu to chat with Parrotflow",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["tabs"],
-  "action": {
-    "default_icon": "icon.png"
-  },
+  "permissions": [
+      "contextMenus"
+  ],
   "background": {
-    "service_worker": "service-worker.js",
+    "service_worker": "service_worker.js",
     "type": "module"
+  },
+  "action": {
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }

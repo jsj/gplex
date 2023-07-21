@@ -48,8 +48,10 @@
 		1A84DEF32A50AFBD005FC7D1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1A84DEF62A50B28C005FC7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A84DEF82A50B2A4005FC7D1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		1AA5C9202A66EF5200C3C7D8 /* service-worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "service-worker.js"; sourceTree = "<group>"; };
-		1AA5C9212A66EF5200C3C7D8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1AA347D32A6A4DD5002B520C /* service_worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = service_worker.js; sourceTree = "<group>"; };
+		1AA347E22A6A53C8002B520C /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon48.png; sourceTree = "<group>"; };
+		1AA347E32A6A53C8002B520C /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16.png; sourceTree = "<group>"; };
+		1AA347E42A6A53C8002B520C /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon128.png; sourceTree = "<group>"; };
 		1AA5C9222A66EF5200C3C7D8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		1AD56CB42A5A2CEE00E94A33 /* Finder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
 		1AF510872A631F7600CEA0ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,9 +138,11 @@
 		1AA5C91F2A66EF4300C3C7D8 /* Chrome */ = {
 			isa = PBXGroup;
 			children = (
-				1AA5C9212A66EF5200C3C7D8 /* icon.png */,
+				1AA347E32A6A53C8002B520C /* icon16.png */,
+				1AA347E22A6A53C8002B520C /* icon48.png */,
+				1AA347E42A6A53C8002B520C /* icon128.png */,
+				1AA347D32A6A4DD5002B520C /* service_worker.js */,
 				1AA5C9222A66EF5200C3C7D8 /* manifest.json */,
-				1AA5C9202A66EF5200C3C7D8 /* service-worker.js */,
 			);
 			path = Chrome;
 			sourceTree = "<group>";
