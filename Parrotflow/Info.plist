@@ -2,40 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHumanReadableCopyright</key>
-	<string>© James Jackson</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.productivity</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
-    <key>CFBundleDocumentTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeName</key>
-            <string>Plain Text</string>
-            <key>CFBundleTypeRole</key>
-            <string>Viewer</string>
-            <key>LSHandlerRank</key>
-            <string>Alternate</string>
-            <key>LSItemContentTypes</key>
-            <array>
-                <string>public.text</string>
-                <string>public.plain-text</string>
-            </array>
-        </dict>
-        <dict>
-            <key>CFBundleTypeName</key>
-            <string>PDF</string>
-            <key>CFBundleTypeRole</key>
-            <string>Viewer</string>
-            <key>LSHandlerRank</key>
-            <string>Alternate</string>
-            <key>LSItemContentTypes</key>
-            <array>
-                <string>public.pdf</string>
-                <string>com.adobe.pdf</string>
-            </array>
-        </dict>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.parrotflow.ios</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>parrotflow</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

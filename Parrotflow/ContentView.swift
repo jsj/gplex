@@ -2,63 +2,102 @@
 //  ContentView.swift
 //  Parrotflow
 //
-//  Created by James Jackson on 7/15/23.
+//  Created by James Jackson on 7/21/23.
 //
 
 import SwiftUI
-import SafariServices
-import CoreGraphics
 
 struct ContentView: View {
     
-    static let safariExtensionID = "com.parrotflow.mac.safari"
-    
     @Environment(\.openURL) var openURL
+    @EnvironmentObject var messageManager: MessageManager
+    
+    @State private var text: String = ""
+    @FocusState private var isFocused: Bool
+    @State private var showAlert = false
     
     var body: some View {
         ZStack {
-            Image("Dalle")
-                .resizable()
-            VStack(spacing: 14) {
-                Image(nsImage: NSImage(named: "AppIcon")!)
-                Text("Parrotflow")
-                    .textCase(.uppercase)
-                    .opacity(0.5)
-                    .blendMode(.plusLighter)
+            ScrollView {
                 HStack {
-                    Button("Get Shortcut") {
-                        openURL(URL(string: "https://parrotflow.com/shortcut")!)
+                    Text("Parrotflow")
+                        .font(.caption2)
+                        .textCase(.uppercase)
+                        .opacity(0.5)
+                    Spacer()
+                    Button {
+                        messageManager.currentTask?.cancel()
+                        messageManager.currentTask = nil
+                    } label: {
+                        Image(systemName: "stop.circle")
+                            .font(.title)
+                            .foregroundStyle(Color.pink)
+                            .opacity(messageManager.currentTask == nil ? 0 : 1)
                     }
-                    .accentColor(.indigo)
-                    .buttonStyle(.borderedProminent)
-                    Button("Enable Safari Extension") {
-                        SFSafariApplication.showPreferencesForExtension(withIdentifier: Self.safariExtensionID)
+                }
+                .padding()
+                ForEach(messageManager.messages) { message in
+                    HStack {
+                        Text(message.content)
+                            .opacity(message.role == "user" ? 0.5 : 1)
+                            .padding()
+                        Spacer()
                     }
-                    .accentColor(.blue)
-                    .buttonStyle(.borderedProminent)
-                    Button("Enable Chrome Extension") {
-                        openURL(URL(string: "https://parrotflow.com/chrome")!)
+                }
+                Button {
+                    UIImpactFeedbackGenerator().impactOccurred()
+                    messageManager.isFollowUpVisible = false
+                    isFocused = true
+                    text = ""
+                } label: {
+                    Text("Ask a follow up")
+                        .foregroundStyle(.white)
+                        .fontWeight(.semibold)
+                        .padding()
+                }
+                .background {
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color(red: 93 / 255, green: 248 / 255, blue: 119 / 255),
+                            Color(red: 20 / 255, green: 194 / 255, blue: 49 / 255)
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 13, style: .continuous))
+                .opacity(messageManager.isFollowUpVisible && !isFocused ? 1 : 0)
+            }
+            .onTapGesture {
+                text = ""
+                isFocused.toggle()
+            }
+            VStack {
+                Spacer()
+                TextField("Send a message", text: $text)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                    .background {
+                        Color.black
                     }
-                    .accentColor(.red)
-                    .buttonStyle(.borderedProminent)
-                    Button("Open a file") {
-                        guard let url = Finder.showOpenPanel() else { return }
-                        guard let content = Finder.readContent(from: url),
-                              let baseURL = URL(string: "https://chat.parrotflow.com") else {
-                            return
-                        }
-                        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-                        let queryItem = URLQueryItem(name: "p", value: content)
-                        components?.queryItems = [queryItem]
-                        guard let encodedURL = components?.url else {
-                            return
-                        }
-                        openURL(encodedURL)
-                        NSApplication.shared.terminate(self)
+                    .focused($isFocused)
+                    .opacity(isFocused ? 1 : 0)
+                    .onSubmit {
+                        messageManager.sendMessage(prompt: text)
                     }
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Clear"),
+                      message: Text("Are you sure you want to clear the chat?"),
+                      primaryButton: .destructive(Text("Clear"), action: { messageManager.clear() }),
+                      secondaryButton: .cancel(Text("Cancel")))
+            }
+            .onShake {
+                UIImpactFeedbackGenerator().impactOccurred()
+                withAnimation {
+                    showAlert = true
                 }
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

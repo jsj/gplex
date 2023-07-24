@@ -1,8 +1,8 @@
 //
-//  Parrotflow.swift
+//  ParrotflowApp.swift
 //  Parrotflow
 //
-//  Created by James Jackson on 7/1/23.
+//  Created by James Jackson on 7/21/23.
 //
 
 import SwiftUI
@@ -10,45 +10,38 @@ import SwiftUI
 @main
 struct Parrotflow: App {
     
-    @Environment(\.openURL) var openURL
+    @AppStorage("hasOnboarded") var hasOnboarded = false
+    @StateObject private var messageManager = MessageManager()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .preferredColorScheme(.dark)
-                .onOpenURL { url in
-                    guard let content = Finder.readContent(from: url),
-                          let baseURL = URL(string: "http://chat.parrotflow.com") else {
-                        return
-                    }
-                    var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-                    let queryItem = URLQueryItem(name: "p", value: content)
-                    components?.queryItems = [queryItem]
-                    guard let encodedURL = components?.url else {
-                        return
-                    }
-                    openURL(encodedURL)
-                    NSApplication.shared.terminate(self)
-                }
-        }
-        .commands {
-            CommandGroup(before: .saveItem) {
-                Button("Open a file") {
-                    guard let url = Finder.showOpenPanel() else { return }
-                    guard let content = Finder.readContent(from: url),
-                          let baseURL = URL(string: "http://chat.parrotflow.com") else {
-                        return
-                    }
-                    var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-                    let queryItem = URLQueryItem(name: "p", value: content)
-                    components?.queryItems = [queryItem]
-                    guard let encodedURL = components?.url else {
-                        return
-                    }
-                    openURL(encodedURL)
-                    NSApplication.shared.terminate(self)
-                }
-                .keyboardShortcut("o", modifiers: .command)
+            if hasOnboarded {
+                ContentView()
+                    .environmentObject(messageManager)
+                    .preferredColorScheme(.dark)
+                    .onOpenURL(perform: { url in
+                        hasOnboarded = true
+                        messageManager.clear()
+                        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+                        guard let components = components else { return }
+                        guard let queryItems = components.queryItems else { return }
+                        let qQueryItem = queryItems.first { queryItem in return queryItem.name == "q" }
+                        guard let q = qQueryItem?.value?.replacingOccurrences(of: "+", with: " ") else { return }
+                        messageManager.sendMessage(prompt: q)
+                    })
+            } else {
+                OnboardView()
+                    .preferredColorScheme(.dark)
+                    .onOpenURL(perform: { url in
+                        hasOnboarded = true
+                        messageManager.clear()
+                        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+                        guard let components = components else { return }
+                        guard let queryItems = components.queryItems else { return }
+                        let qQueryItem = queryItems.first { queryItem in return queryItem.name == "q" }
+                        guard let q = qQueryItem?.value?.replacingOccurrences(of: "+", with: " ") else { return }
+                        messageManager.sendMessage(prompt: q)
+                    })
             }
         }
     }
