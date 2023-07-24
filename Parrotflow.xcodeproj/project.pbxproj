@@ -306,7 +306,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A695FDD2A6D9328000B3F86 /* Config.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				INFOPLIST_KEY_CFBundleDisplayName = Safari;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -316,7 +315,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -337,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A695FDD2A6D9328000B3F86 /* Config.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				INFOPLIST_KEY_CFBundleDisplayName = Safari;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -347,7 +344,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -490,7 +486,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -503,7 +498,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -522,7 +516,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -535,7 +528,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
