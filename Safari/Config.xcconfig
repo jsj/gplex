@@ -1,17 +1,12 @@
 //
 //  Config.xcconfig
-//  Safari Extension
+//  Parrotflow
 //
 //  Created by James Jackson on 7/1/23.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-
-// ===================
-// Signing
-// ===================
-CODE_SIGN_ENTITLEMENTS=Safari/Safari.entitlements
 
 // ===================
 // Packaging

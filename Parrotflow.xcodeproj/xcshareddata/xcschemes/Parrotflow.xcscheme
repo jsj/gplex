@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A84DEC42A50AF35005FC7D1"
+               BlueprintIdentifier = "1AD341652A6AF23900C198B8"
                BuildableName = "Parrotflow.app"
                BlueprintName = "Parrotflow"
                ReferencedContainer = "container:Parrotflow.xcodeproj">
@@ -43,7 +43,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A84DEC42A50AF35005FC7D1"
+            BlueprintIdentifier = "1AD341652A6AF23900C198B8"
             BuildableName = "Parrotflow.app"
             BlueprintName = "Parrotflow"
             ReferencedContainer = "container:Parrotflow.xcodeproj">
@@ -60,7 +60,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A84DEC42A50AF35005FC7D1"
+            BlueprintIdentifier = "1AD341652A6AF23900C198B8"
             BuildableName = "Parrotflow.app"
             BlueprintName = "Parrotflow"
             ReferencedContainer = "container:Parrotflow.xcodeproj">

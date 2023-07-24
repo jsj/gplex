@@ -5,27 +5,9 @@
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.Safari.extension</string>
+		<string>com.apple.Safari.web-extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
-		<key>SFSafariWebsiteAccess</key>
-		<dict>
-			<key>Level</key>
-			<string>None</string>
-		</dict>
-		<key>SFSafariToolbarItem</key>
-		<dict>
-			<key>Action</key>
-			<string>Command</string>
-			<key>Identifier</key>
-			<string>Button</string>
-			<key>Image</key>
-			<string>ToolbarItemIcon.png</string>
-			<key>Label</key>
-			<string>Parrotflow</string>
-		</dict>
-    </dict>
-	<key>NSHumanReadableDescription</key>
-	<string>Chat your data</string>
+		<string>$(PRODUCT_MODULE_NAME).SafariWebExtensionHandler</string>
+	</dict>
 </dict>
 </plist>
