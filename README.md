@@ -3,6 +3,7 @@
 > Ask anything
 
 [![safari-extension](/.README/assets/badges/safari-extension.svg)](https://parrotflow.com)
+[![haptics](/.README/assets/badges/haptics.svg)](https://parrotflow.com)
 [![github-star](/.README/assets/badges/github-star.svg)](https://github.com/jsj/parrotflow)
 
 ## Demo
