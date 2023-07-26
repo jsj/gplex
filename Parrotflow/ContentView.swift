@@ -42,7 +42,7 @@ struct ContentView: View {
                                 } label: {
                                     Label("Rate", systemImage: "star")
                                 }
-                                Text("James Jackson. © 2023")
+                                Text("© 2023 James Jackson")
                                     .textCase(.uppercase)
                             }
                         }

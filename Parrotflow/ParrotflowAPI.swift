@@ -36,7 +36,7 @@ struct Chunk: Decodable {
 struct ParrotflowAPI {
     
     private let url = {
-        guard let url = URL(string: "https://api-parrotflow.pages.dev/v1/chat/completions") else {
+        guard let url = URL(string: "https://api.parrotflow.com/v1/chat/completions") else {
             fatalError("Invalid API URL")
         }
         return url
