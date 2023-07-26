@@ -64,7 +64,7 @@ struct OnboardView: View {
                     HStack {
                         Image(systemName: "2.circle.fill")
                             .foregroundColor(.green)
-                        Text("Toggle the extension On")
+                        Text("Toggle the extension **On**")
                     }
                     Image("onboard-2")
                         .resizable()
@@ -86,7 +86,7 @@ struct OnboardView: View {
                     HStack {
                         Image(systemName: "4.circle.fill")
                             .foregroundColor(.green)
-                        Text("From the list of options, tap Allow")
+                        Text("From the list of options, tap **Allow**")
                     }
                     Image("onboard-4")
                         .resizable()
