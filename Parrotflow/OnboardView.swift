@@ -22,6 +22,7 @@ struct OnboardView: View {
                     .padding(.top, 32)
                 VStack(spacing: 10) {
                     Text("Enable Safari Extension")
+                        .textCase(.uppercase)
                         .font(.headline)
                         .foregroundStyle(.secondary)
                         .fontWeight(.semibold)
@@ -122,6 +123,7 @@ struct OnboardView: View {
             }
             .padding()
         }
+        .interactiveDismissDisabled()
         .sheet(isPresented: $needsHelp) {
             MessageComposer(recipient: "contact@parrotflow.com", message: "I need help enabling Parrotflow")
         }
