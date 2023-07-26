@@ -6,9 +6,11 @@
 [![haptics](/.README/assets/badges/haptics.svg)](https://parrotflow.com)
 [![github-star](/.README/assets/badges/github-star.svg)](https://github.com/jsj/parrotflow)
 
-## Demo
+## Screens
 
-![demo](/.README/assets/demo.gif)
+![demo](/.README/assets/screens/demo.gif)
+![0](/.README/assets/screens/0.png)
+![1](/.README/assets/screens/1.png)
 
 ## Download
 
