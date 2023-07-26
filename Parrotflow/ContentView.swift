@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
     
     @Environment(\.openURL) var openURL
+    @Environment(\.requestReview) var requestReview
+    
     @EnvironmentObject var messageManager: MessageManager
     
     @State private var text: String = ""
@@ -24,6 +27,23 @@ struct ContentView: View {
                         .font(.caption2)
                         .textCase(.uppercase)
                         .opacity(0.5)
+                        .contextMenu {
+                            Group {
+                                Button {
+                                    messageManager.clear()
+                                } label: {
+                                    Label("Clear", systemImage: "clear")
+                                }
+                                ShareLink(item: URL(string: "https://parrotflow.com")!) {
+                                    Label("Share", systemImage: "square.and.arrow.up")
+                                }
+                                Button {
+                                    requestReview()
+                                } label: {
+                                    Label("Rate", systemImage: "star")
+                                }
+                            }
+                        }
                     Spacer()
                     Button {
                         messageManager.currentTask?.cancel()
