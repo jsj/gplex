@@ -6,6 +6,7 @@
 [![google](/.README/assets/badges/google.svg)](https://parrotflow.com)
 [![safari](/.README/assets/badges/safari.svg)](https://parrotflow.com)
 [![haptics](/.README/assets/badges/haptics.svg)](https://parrotflow.com)
+[![discord](/.README/assets/badges/discord.svg)](https://discord.gg/8FZMaucm)
 [![github-star](/.README/assets/badges/github-star.svg)](https://github.com/jsj/parrotflow)
 [![xcode-cloud](/.README/assets/badges/xcode-cloud.svg)](https://parrotflow.com)
 [![license](/.README/assets/badges/license.svg)](https://parrotflow.com/license)
