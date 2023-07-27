@@ -19,12 +19,11 @@ extension UIWindow {
     }
 }
 
-struct DeviceShakeViewModifier: ViewModifier {
+struct ShakeViewModifier: ViewModifier {
     let action: () -> Void
     
     func body(content: Content) -> some View {
         content
-            .onAppear()
             .onReceive(NotificationCenter.default.publisher(for: UIDevice.deviceDidShakeNotification)) { _ in
                 action()
             }
@@ -33,6 +32,6 @@ struct DeviceShakeViewModifier: ViewModifier {
 
 extension View {
     func onShake(perform action: @escaping () -> Void) -> some View {
-        modifier(DeviceShakeViewModifier(action: action))
+        modifier(ShakeViewModifier(action: action))
     }
 }

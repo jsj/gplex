@@ -17,7 +17,6 @@ struct Parrotflow: App {
         WindowGroup {
             ContentView()
                 .environmentObject(messageManager)
-                .preferredColorScheme(.dark)
                 .onOpenURL(perform: { url in
                     needsOnboard = false
                     messageManager.clear()
@@ -30,7 +29,6 @@ struct Parrotflow: App {
                 })
                 .sheet(isPresented: $needsOnboard) {
                     OnboardView()
-                        .preferredColorScheme(.dark)
                 }
         }
     }
