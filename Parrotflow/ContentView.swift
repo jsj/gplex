@@ -120,6 +120,7 @@ struct ContentView: View {
                     showAlert = true
                 }
             }
+            .preferredColorScheme(.dark)
         }
     }
 }

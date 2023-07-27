@@ -123,6 +123,7 @@ struct OnboardView: View {
             }
             .padding()
         }
+        .preferredColorScheme(.dark)
         .interactiveDismissDisabled()
         .sheet(isPresented: $needsHelp) {
             MessageComposer(recipient: "contact@parrotflow.com", message: "I need help enabling Parrotflow")
