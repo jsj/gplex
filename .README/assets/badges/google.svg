@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="141px" height="25px" viewBox="0 0 141 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>works-with-google</title>
+    <title>google</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#696969" offset="0%"></stop>
@@ -9,13 +9,13 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="badges-final-copy-3" transform="translate(-4.000000, -198.000000)">
-            <g id="works-with-google" transform="translate(4.000000, 198.000000)">
+            <g id="google" transform="translate(4.000000, 198.000000)">
                 <g id="haptics-copy-3">
                     <text id="Haptics" font-family="SFPro-Bold, SF Pro" font-size="10" font-weight="bold" letter-spacing="-0.241176468" fill="#FFFFFF">
                         <tspan x="42" y="17">Haptics</tspan>
                     </text>
                     <rect id="Rectangle-Copy-11" fill="url(#linearGradient-1)" fill-rule="nonzero" x="30" y="0" width="111" height="25"></rect>
-                    <rect id="Rectangle-Copy-12" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="30.4075924" height="25"></rect>
+                    <rect id="Rectangle-Copy-12" stroke="#979797" stroke-width="0.5" fill="#FFFFFF" fill-rule="nonzero" x="0.25" y="0.25" width="29.9075924" height="24.5"></rect>
                 </g>
                 <g id="g" transform="translate(8.000000, 5.000000)" fill-rule="nonzero">
                     <path d="M7.65302187,6.13634574 L7.65302187,9.04089742 L11.7717969,9.04089742 C11.5909347,9.97498701 11.0481871,10.7659277 10.2341863,11.297736 L12.7179695,13.1863875 C14.1651088,11.8773392 15,9.95459341 15,7.67051092 C15,7.13870268 14.9513094,6.62728805 14.8608381,6.13642448 L7.65302187,6.13634574 Z" id="Path" fill="#4285F4"></path>
