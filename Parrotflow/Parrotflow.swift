@@ -30,6 +30,7 @@ struct Parrotflow: App {
                 })
                 .sheet(isPresented: $needsOnboard) {
                     OnboardView()
+                        .preferredColorScheme(.dark)
                 }
         }
     }
