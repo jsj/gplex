@@ -16,9 +16,10 @@ struct ContentView: View {
     @EnvironmentObject var messageManager: MessageManager
     
     @State private var text: String = ""
-    @FocusState private var isFocused: Bool
     @State private var showAlert = false
-    
+    @FocusState private var isFocused: Bool
+    @State private var showingOnboarding: Bool = false
+     
     var body: some View {
         ZStack {
             ScrollView {
@@ -41,6 +42,16 @@ struct ContentView: View {
                                     requestReview()
                                 } label: {
                                     Label("Rate", systemImage: "star")
+                                }
+                                Button {
+                                    openURL(URL(string: "https://www.google.com/search?q=how+tall+is+the+eiffel+tower")!)
+                                } label: {
+                                    Label("Demo", systemImage: "magnifyingglass")
+                                }
+                                Button {
+                                    showingOnboarding = true
+                                } label: {
+                                    Label("Onboarding", systemImage: "safari")
                                 }
                                 Text("© 2023 James Jackson")
                                     .textCase(.uppercase)
@@ -121,6 +132,9 @@ struct ContentView: View {
                 }
             }
             .preferredColorScheme(.dark)
+            .sheet(isPresented: $showingOnboarding) {
+                OnboardView()
+            }
         }
     }
 }

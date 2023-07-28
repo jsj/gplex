@@ -29,6 +29,7 @@ struct Parrotflow: App {
                 })
                 .sheet(isPresented: $needsOnboard) {
                     OnboardView()
+                        .interactiveDismissDisabled()
                 }
         }
     }
