@@ -15,10 +15,10 @@ struct ContentView: View {
     
     @EnvironmentObject var messageManager: MessageManager
     
-    @State private var text: String = ""
-    @State private var showAlert = false
-    @FocusState private var isFocused: Bool
-    @State private var showingOnboarding: Bool = false
+    @State var text: String = ""
+    @State var showAlert = false
+    @FocusState var isFocused: Bool
+    @State var showingOnboarding: Bool = false
      
     var body: some View {
         ZStack {

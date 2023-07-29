@@ -10,7 +10,8 @@ import SwiftUI
 struct OnboardView: View {
     
     @Environment(\.openURL) var openURL
-    @State private var needsHelp = false
+    
+    @State var needsHelp = false
     
     var body: some View {
         ScrollView(showsIndicators: false) {
