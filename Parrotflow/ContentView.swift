@@ -135,6 +135,9 @@ struct ContentView: View {
             .sheet(isPresented: $showingOnboarding) {
                 OnboardView()
             }
+            .onOpenURL(perform: { url in
+                showingOnboarding = false
+            })
         }
     }
 }
