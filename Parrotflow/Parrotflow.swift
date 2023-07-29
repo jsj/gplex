@@ -11,7 +11,7 @@ import SwiftUI
 struct Parrotflow: App {
     
     @AppStorage("needsOnboard") var needsOnboard = true
-    @StateObject private var messageManager = MessageManager()
+    @StateObject var messageManager = MessageManager()
     
     var body: some Scene {
         WindowGroup {
