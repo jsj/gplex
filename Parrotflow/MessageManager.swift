@@ -36,12 +36,12 @@ class MessageManager: ObservableObject {
                     }
                 }
                 isFollowUpVisible = true
-                currentTask = nil
             } catch {
                 if (error.localizedDescription != "cancelled") {
                     messages.append(Query.Message(role: "assistant", content: error.localizedDescription))
                 }
             }
+            currentTask = nil
         }
     }
     
