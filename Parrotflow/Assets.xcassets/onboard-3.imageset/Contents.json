@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "onboard-3 1.png",
+      "filename" : "onboard-3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "onboard-3@2x 1.png",
+      "filename" : "onboard-3@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "onboard-3@3x 1.png",
+      "filename" : "onboard-3@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
