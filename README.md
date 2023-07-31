@@ -16,7 +16,10 @@
 ![demo](/.README/assets/screens/demo.gif)
 ![0](/.README/assets/screens/0.png)
 ![1](/.README/assets/screens/1.png)
-![2](/.README/assets/screens/2.png)
+
+---
+
+![all](/.README/assets/screens/all.png)
 
 ## Download
 
