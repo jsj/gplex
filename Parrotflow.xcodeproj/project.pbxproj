@@ -21,7 +21,6 @@
 		1A7929C22A79646B006EB9CD /* MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7929C12A79646B006EB9CD /* MacApp.swift */; };
 		1A7929C42A79646B006EB9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7929C32A79646B006EB9CD /* ContentView.swift */; };
 		1A7929C62A79646B006EB9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7929C52A79646B006EB9CD /* Assets.xcassets */; };
-		1A7929C92A79646B006EB9CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */; };
 		1AA196992A71BFEE003D5C54 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA196982A71BFEE003D5C54 /* StoreKit.framework */; };
 		1AA1969B2A740FF2003D5C54 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1969A2A740FF2003D5C54 /* Settings.bundle */; };
 		1AD3416A2A6AF23900C198B8 /* Parrotflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD341692A6AF23900C198B8 /* Parrotflow.swift */; };
@@ -72,14 +71,15 @@
 		1A695FDC2A6D931D000B3F86 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1A695FDD2A6D9328000B3F86 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Safari/Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		1A695FE02A6D95EC000B3F86 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
-		1A7929BF2A79646B006EB9CD /* Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7929BF2A79646B006EB9CD /* Parrotflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parrotflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7929C12A79646B006EB9CD /* MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacApp.swift; sourceTree = "<group>"; };
 		1A7929C32A79646B006EB9CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A7929C52A79646B006EB9CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A7929CA2A79646B006EB9CD /* Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac.entitlements; sourceTree = "<group>"; };
 		1AA196982A71BFEE003D5C54 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1AA1969A2A740FF2003D5C54 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1AC301CA2A79655F0005D1A1 /* MacConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacConfig.xcconfig; sourceTree = "<group>"; };
+		1AC301CB2A7965E20005D1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD341662A6AF23900C198B8 /* Parrotflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parrotflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD341692A6AF23900C198B8 /* Parrotflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parrotflow.swift; sourceTree = "<group>"; };
 		1AD3416B2A6AF23900C198B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,19 +155,20 @@
 			children = (
 				1A7929C12A79646B006EB9CD /* MacApp.swift */,
 				1A7929C32A79646B006EB9CD /* ContentView.swift */,
-				1A7929C52A79646B006EB9CD /* Assets.xcassets */,
-				1A7929CA2A79646B006EB9CD /* Mac.entitlements */,
-				1A7929C72A79646B006EB9CD /* Preview Content */,
+				1A7929CE2A796519006EB9CD /* Supporting Files */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
 		};
-		1A7929C72A79646B006EB9CD /* Preview Content */ = {
+		1A7929CE2A796519006EB9CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */,
+				1AC301CA2A79655F0005D1A1 /* MacConfig.xcconfig */,
+				1A7929C52A79646B006EB9CD /* Assets.xcassets */,
+				1AC301CB2A7965E20005D1A1 /* Info.plist */,
+				1A7929CA2A79646B006EB9CD /* Mac.entitlements */,
 			);
-			path = "Preview Content";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		1AD3415D2A6AF23900C198B8 = {
@@ -189,7 +190,7 @@
 			children = (
 				1AD341662A6AF23900C198B8 /* Parrotflow.app */,
 				1A1432442A6B084F001DB0D7 /* Safari.appex */,
-				1A7929BF2A79646B006EB9CD /* Mac.app */,
+				1A7929BF2A79646B006EB9CD /* Parrotflow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,7 +255,7 @@
 			);
 			name = Mac;
 			productName = Mac;
-			productReference = 1A7929BF2A79646B006EB9CD /* Mac.app */;
+			productReference = 1A7929BF2A79646B006EB9CD /* Parrotflow.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1AD341652A6AF23900C198B8 /* Parrotflow */ = {
@@ -333,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A7929C92A79646B006EB9CD /* Preview Assets.xcassets in Resources */,
 				1A7929C62A79646B006EB9CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,27 +452,23 @@
 		};
 		1A7929CB2A79646B006EB9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC301CA2A79655F0005D1A1 /* MacConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Mac/Mac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Parrotflow;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.Mac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -481,27 +477,23 @@
 		};
 		1A7929CC2A79646B006EB9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC301CA2A79655F0005D1A1 /* MacConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Mac/Mac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 6QX9D8LZWS;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Parrotflow;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.Mac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -638,9 +630,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,9 +659,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
