@@ -18,6 +18,10 @@
 		1A695FD82A6C87C9000B3F86 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A695FD72A6C87C9000B3F86 /* MessageManager.swift */; };
 		1A695FDA2A6C8952000B3F86 /* OnShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A695FD92A6C8952000B3F86 /* OnShake.swift */; };
 		1A695FE12A6D95EC000B3F86 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A695FE02A6D95EC000B3F86 /* OnboardView.swift */; };
+		1A7929C22A79646B006EB9CD /* MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7929C12A79646B006EB9CD /* MacApp.swift */; };
+		1A7929C42A79646B006EB9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7929C32A79646B006EB9CD /* ContentView.swift */; };
+		1A7929C62A79646B006EB9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7929C52A79646B006EB9CD /* Assets.xcassets */; };
+		1A7929C92A79646B006EB9CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */; };
 		1AA196992A71BFEE003D5C54 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA196982A71BFEE003D5C54 /* StoreKit.framework */; };
 		1AA1969B2A740FF2003D5C54 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1969A2A740FF2003D5C54 /* Settings.bundle */; };
 		1AD3416A2A6AF23900C198B8 /* Parrotflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD341692A6AF23900C198B8 /* Parrotflow.swift */; };
@@ -68,6 +72,12 @@
 		1A695FDC2A6D931D000B3F86 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1A695FDD2A6D9328000B3F86 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Safari/Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		1A695FE02A6D95EC000B3F86 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		1A7929BF2A79646B006EB9CD /* Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7929C12A79646B006EB9CD /* MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacApp.swift; sourceTree = "<group>"; };
+		1A7929C32A79646B006EB9CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A7929C52A79646B006EB9CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A7929CA2A79646B006EB9CD /* Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac.entitlements; sourceTree = "<group>"; };
 		1AA196982A71BFEE003D5C54 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1AA1969A2A740FF2003D5C54 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1AD341662A6AF23900C198B8 /* Parrotflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parrotflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +88,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A1432412A6B084F001DB0D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7929BC2A79646B006EB9CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,6 +150,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1A7929C02A79646B006EB9CD /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				1A7929C12A79646B006EB9CD /* MacApp.swift */,
+				1A7929C32A79646B006EB9CD /* ContentView.swift */,
+				1A7929C52A79646B006EB9CD /* Assets.xcassets */,
+				1A7929CA2A79646B006EB9CD /* Mac.entitlements */,
+				1A7929C72A79646B006EB9CD /* Preview Content */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		1A7929C72A79646B006EB9CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A7929C82A79646B006EB9CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		1AD3415D2A6AF23900C198B8 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +178,7 @@
 				1A4E98632A6DF62A00196C36 /* README.md */,
 				1AD341682A6AF23900C198B8 /* Parrotflow */,
 				1A1432452A6B084F001DB0D7 /* Safari */,
+				1A7929C02A79646B006EB9CD /* Mac */,
 				1AD341672A6AF23900C198B8 /* Products */,
 				1A4E985D2A6DF5FF00196C36 /* Frameworks */,
 			);
@@ -151,6 +189,7 @@
 			children = (
 				1AD341662A6AF23900C198B8 /* Parrotflow.app */,
 				1A1432442A6B084F001DB0D7 /* Safari.appex */,
+				1A7929BF2A79646B006EB9CD /* Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +240,23 @@
 			productReference = 1A1432442A6B084F001DB0D7 /* Safari.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		1A7929BE2A79646B006EB9CD /* Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7929CD2A79646B006EB9CD /* Build configuration list for PBXNativeTarget "Mac" */;
+			buildPhases = (
+				1A7929BB2A79646B006EB9CD /* Sources */,
+				1A7929BC2A79646B006EB9CD /* Frameworks */,
+				1A7929BD2A79646B006EB9CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mac;
+			productName = Mac;
+			productReference = 1A7929BF2A79646B006EB9CD /* Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1AD341652A6AF23900C198B8 /* Parrotflow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD341742A6AF23A00C198B8 /* Build configuration list for PBXNativeTarget "Parrotflow" */;
@@ -233,6 +289,9 @@
 					1A1432432A6B084F001DB0D7 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					1A7929BE2A79646B006EB9CD = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					1AD341652A6AF23900C198B8 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -253,6 +312,7 @@
 			targets = (
 				1AD341652A6AF23900C198B8 /* Parrotflow */,
 				1A1432432A6B084F001DB0D7 /* Safari */,
+				1A7929BE2A79646B006EB9CD /* Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +326,15 @@
 				1A14324E2A6B084F001DB0D7 /* manifest.json in Resources */,
 				1A14324A2A6B084F001DB0D7 /* _locales in Resources */,
 				1A1432522A6B084F001DB0D7 /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7929BD2A79646B006EB9CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7929C92A79646B006EB9CD /* Preview Assets.xcassets in Resources */,
+				1A7929C62A79646B006EB9CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +355,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1432472A6B084F001DB0D7 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7929BB2A79646B006EB9CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7929C42A79646B006EB9CD /* ContentView.swift in Sources */,
+				1A7929C22A79646B006EB9CD /* MacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +447,64 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A7929CB2A79646B006EB9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mac/Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QX9D8LZWS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.Mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A7929CC2A79646B006EB9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mac/Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QX9D8LZWS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.Mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -559,6 +695,15 @@
 			buildConfigurations = (
 				1A14325E2A6B084F001DB0D7 /* Debug */,
 				1A14325F2A6B084F001DB0D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7929CD2A79646B006EB9CD /* Build configuration list for PBXNativeTarget "Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7929CB2A79646B006EB9CD /* Debug */,
+				1A7929CC2A79646B006EB9CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
