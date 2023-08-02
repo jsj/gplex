@@ -2,18 +2,23 @@ const hijack = () => {
     const parrotflowWidget = document.getElementById('parrotflowWidget');
     if (!parrotflowWidget) {
         try  {
+            
+            const isOld = document.getElementById('hdtb-msb');
+            if (isOld) {
+                throw 'old style';
+            }
+            
             // Find Bubble
-            const main = document.getElementById("main");
-            const navigation = main.querySelectorAll('div[role="navigation"]');
-            let a = null;
-            navigation.forEach((navDiv) => {
-                const test = navDiv.querySelector('a');
-                if (test) {
-                    a = test;
-                    return;
-                }
-            });
-            const parent = a.parentNode;
+            let bubbleA = null;
+            const aS = document.querySelectorAll('a[role="link"]');
+            for (const a of aS) {
+              const test = a.textContent.trim().length > 0;
+              if (test) {
+                bubbleA = a;
+                break;
+              }
+            }
+            const parent = bubbleA.parentNode;
             
             // Clone
             const clone = parent.cloneNode(true);
@@ -34,7 +39,7 @@ const hijack = () => {
             // Append to DOM
             const container = parent.parentNode;
             container.insertBefore(clone, container.firstChild);
-            
+            console.log('added bubble');
         } catch {
             
             // Old Style
