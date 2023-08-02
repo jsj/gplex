@@ -30,8 +30,10 @@ const hijack = () => {
             cloneA.href = `parrotflow://?q=${document.URL.split("?q=")[1]}`;
             const cloneSpan = cloneA.querySelector('span');
             if (cloneSpan) {
+                cloneSpan.style.color = "dodgerblue";
                 cloneSpan.textContent = "Chat";
             } else {
+                cloneDiv.style.color = "dodgerblue";
                 const cloneDiv = cloneA.querySelector('div');
                 cloneDiv.textContent = "Chat";
             }
@@ -50,6 +52,7 @@ const hijack = () => {
                 newElement.className = "hdtb-mitem";
                 const queryParameter = document.URL.split("?q=")[1];
                 newElement.innerHTML = `<a href='parrotflow://?q=${queryParameter}'><span>Chat</span></a>`;
+                newElement.style.color = "dodgerblue";
                 referenceNode.insertBefore(newElement, referenceNode.firstChild);
             }
         }
