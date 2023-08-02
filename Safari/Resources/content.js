@@ -25,15 +25,17 @@ const hijack = () => {
             clone.id = "parrotflowWidget"
             
             // Reformat
+            let bodyStyle = window.getComputedStyle(document.body);
+            let isLightMode = bodyStyle.backgroundColor === 'rgb(255, 255, 255)';
             const cloneA = clone.querySelector('a');
             cloneA.removeAttribute('jsaction');
             cloneA.href = `parrotflow://?q=${document.URL.split("?q=")[1]}`;
             const cloneSpan = cloneA.querySelector('span');
             if (cloneSpan) {
-                cloneSpan.style.color = "dodgerblue";
+                cloneSpan.style.color = isLightMode ? "#1a73e8" : "#8AB4F8";
                 cloneSpan.textContent = "Chat";
             } else {
-                cloneDiv.style.color = "dodgerblue";
+                cloneDiv.style.color = isLightMode ? "#1a73e8" : "#8AB4F8";
                 const cloneDiv = cloneA.querySelector('div');
                 cloneDiv.textContent = "Chat";
             }
@@ -52,8 +54,12 @@ const hijack = () => {
                 newElement.className = "hdtb-mitem";
                 const queryParameter = document.URL.split("?q=")[1];
                 newElement.innerHTML = `<a href='parrotflow://?q=${queryParameter}'><span>Chat</span></a>`;
-                newElement.style.color = "dodgerblue";
                 referenceNode.insertBefore(newElement, referenceNode.firstChild);
+                
+                let bodyStyle = window.getComputedStyle(document.body);
+                let isLightMode = bodyStyle.backgroundColor === 'rgb(255, 255, 255)';
+                const span = newElement.querySelector('span');
+                span.style.color = isLightMode ? "#1a73e8" : "#8AB4F8";
             }
         }
     }
