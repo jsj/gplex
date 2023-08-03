@@ -10,7 +10,10 @@ const hijack = () => {
             
             // Find Bubble
             let bubbleA = null;
-            const aS = document.querySelectorAll('a[role="link"]');
+            let aS = document.querySelectorAll('a[role="link listitem"]');
+            if (!aS.length > 0) {
+                aS = document.querySelectorAll('a[role="link"]');
+            }
             for (const a of aS) {
               const test = a.textContent.trim().length > 0;
               if (test) {
