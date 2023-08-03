@@ -1,6 +1,6 @@
 # Parrotflow 🦜🌊
 
-> Ask anything.
+> Get an answer, not 10 blue links
 
 [![download-app](/.README/assets/badges/download-app.svg)](https://parrotflow.com)
 [![google](/.README/assets/badges/google.svg)](https://parrotflow.com)
