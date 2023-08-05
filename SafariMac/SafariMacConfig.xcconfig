@@ -1,0 +1,28 @@
+//
+//  Config.xcconfig
+//  Safari Extension
+//
+//  Created by James Jackson on 7/1/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// ===================
+// Versioning
+// ===================
+CURRENT_PROJECT_VERSION = 12
+MARKETING_VERSION = 1.0.9
+
+// ===================
+// Signing
+// ===================
+CODE_SIGN_ENTITLEMENTS=SafariMac/SafariMac.entitlements
+
+// ===================
+// Packaging
+// ===================
+GENERATE_INFOPLIST_FILE = YES
+PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.mac.safari
+INFOPLIST_FILE = SafariMac/Info.plist
