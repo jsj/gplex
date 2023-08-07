@@ -1,6 +1,6 @@
 # Parrotflow 🦜🌊
 
-> Get an answer, not links
+> Supercharge Search with AI
 
 [![download-app](/.README/assets/badges/download-app.svg)](https://parrotflow.com)
 [![google](/.README/assets/badges/google.svg)](https://parrotflow.com)
