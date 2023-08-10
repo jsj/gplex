@@ -32,15 +32,19 @@ const hijack = () => {
             let isLightMode = bodyStyle.backgroundColor === 'rgb(255, 255, 255)';
             const cloneA = clone.querySelector('a');
             cloneA.removeAttribute('jsaction');
-            cloneA.href = `parrotflow://?q=${document.URL.split("?q=")[1]}`;
+            
+            let query = document.URL.split("?q=")[1];
+            cloneA.href = `https://perplexity.ai/search/?q=${query}`;
+            
+            //cloneA.href = `parrotflow://?q=`;
             const cloneSpan = cloneA.querySelector('span');
             if (cloneSpan) {
                 cloneSpan.style.color = isLightMode ? "#1a73e8" : "#8AB4F8";
-                cloneSpan.textContent = "Chat";
+                cloneSpan.textContent = "GENERATE ✨";
             } else {
                 cloneDiv.style.color = isLightMode ? "#1a73e8" : "#8AB4F8";
                 const cloneDiv = cloneA.querySelector('div');
-                cloneDiv.textContent = "Chat";
+                cloneDiv.textContent = "GENERATE ✨";
             }
             
             // Append to DOM

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Mac
+//  Gplex
 //
 //  Created by James Jackson on 8/1/23.
 //
@@ -18,15 +18,18 @@ struct ContentView: View {
                 .resizable()
             VStack(spacing: 14) {
                 Image(nsImage: NSImage(named: "AppIcon")!)
-                Text("Parrotflow")
+                Text("Gplex")
                     .textCase(.uppercase)
                     .opacity(0.5)
                     .blendMode(.plusLighter)
+                
+                Text("Generate ✨ an answer to your search result.")
+                
                 HStack {
                     Button(action: {
                         SFSafariApplication.showPreferencesForExtension(withIdentifier: Self.safariExtensionID)
                     }, label: {
-                        Text("Enable Safari Extension")
+                        Text("Enable Safari Extension")
                             .font(.title3)
                             .foregroundStyle(.white)
                             .fontWeight(.semibold)
@@ -45,7 +48,7 @@ struct ContentView: View {
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 13, style: .continuous))
                     .padding()
-                    ShareLink(item: URL(string: "https://parrotflow.com")!) {
+                    ShareLink(item: URL(string: "https://gplexapp.com")!) {
                         HStack {
                             Text("Send to your iPhone")
                                 .font(.title3)
@@ -58,10 +61,10 @@ struct ContentView: View {
                     .background {
                         LinearGradient(
                             gradient: Gradient(colors: [
-                                Color(red: 93 / 255, green: 248 / 255, blue: 119 / 255),
-                                Color(red: 20 / 255, green: 194 / 255, blue: 49 / 255)
+                                Color.white,
+                                Color(red: 0.98, green: 0.73, blue:  0.02)
                             ]),
-                            startPoint: .top,
+                            startPoint: .init(x: 0, y: -10),
                             endPoint: .bottom
                         )
                     }
