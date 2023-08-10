@@ -27,7 +27,12 @@ class MessageManager: ObservableObject {
                 let assistantMessage = Query.Message(role: "assistant", content: "")
                 self.messages.append(assistantMessage)
                 for try await line in stream.lines {
+#if os(iOS)
                     UIImpactFeedbackGenerator().impactOccurred()
+                    
+#elseif os(macOS)
+                    NSHapticFeedbackManager.defaultPerformer.perform(.generic, performanceTime: .default)
+#endif
                     guard let message = parrotflowAPI.parse(line) else { continue }
                     if let lastMessageIndex = self.messages.lastIndex(where: { $0.role == "assistant" }) {
                         withAnimation(.easeInOut) {

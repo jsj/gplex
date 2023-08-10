@@ -26,6 +26,8 @@
 		1AC37B262A7EA7B90027487B /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC37B252A7EA7B90027487B /* SafariExtensionHandler.swift */; };
 		1AC37B352A7EA7B90027487B /* SafariMac.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AC37B232A7EA7B90027487B /* SafariMac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AC37B3B2A7EA88F0027487B /* ToolbarItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC37B3A2A7EA88F0027487B /* ToolbarItemIcon.png */; };
+		1ACABE5D2A8533710093805C /* ParrotflowAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A695FD52A6C8791000B3F86 /* ParrotflowAPI.swift */; };
+		1ACABE5E2A8533710093805C /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A695FD72A6C87C9000B3F86 /* MessageManager.swift */; };
 		1AD3416A2A6AF23900C198B8 /* Parrotflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD341692A6AF23900C198B8 /* Parrotflow.swift */; };
 		1AD3416C2A6AF23900C198B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3416B2A6AF23900C198B8 /* ContentView.swift */; };
 		1AD3416E2A6AF23A00C198B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD3416D2A6AF23A00C198B8 /* Assets.xcassets */; };
@@ -233,6 +235,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1ACABE5C2A85335D0093805C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1A695FD72A6C87C9000B3F86 /* MessageManager.swift */,
+				1A695FD52A6C8791000B3F86 /* ParrotflowAPI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		1AD3415D2A6AF23900C198B8 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +254,7 @@
 				1A1432452A6B084F001DB0D7 /* Safari */,
 				1A7929C02A79646B006EB9CD /* Mac */,
 				1AC37B242A7EA7B90027487B /* SafariMac */,
+				1ACABE5C2A85335D0093805C /* Shared */,
 				1AD341672A6AF23900C198B8 /* Products */,
 				1A4E985D2A6DF5FF00196C36 /* Frameworks */,
 			);
@@ -265,8 +277,6 @@
 				1AD341692A6AF23900C198B8 /* Parrotflow.swift */,
 				1AD3416B2A6AF23900C198B8 /* ContentView.swift */,
 				1A695FE02A6D95EC000B3F86 /* OnboardView.swift */,
-				1A695FD72A6C87C9000B3F86 /* MessageManager.swift */,
-				1A695FD52A6C8791000B3F86 /* ParrotflowAPI.swift */,
 				1A695FD92A6C8952000B3F86 /* OnShake.swift */,
 				1A2985352A71A89D00153BF4 /* MessageComposer.swift */,
 				1AD341772A6AF39400C198B8 /* Supporting Files */,
@@ -459,6 +469,8 @@
 			files = (
 				1A7929C42A79646B006EB9CD /* ContentView.swift in Sources */,
 				1A7929C22A79646B006EB9CD /* MacApp.swift in Sources */,
+				1ACABE5D2A8533710093805C /* ParrotflowAPI.swift in Sources */,
+				1ACABE5E2A8533710093805C /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

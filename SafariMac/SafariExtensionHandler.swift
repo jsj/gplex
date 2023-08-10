@@ -10,7 +10,7 @@ import SafariServices
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
-        guard let url = URL(string: "https://chat.openai.com/") else { return }
-        window.openTab(with: url, makeActiveIfPossible: true)
+        guard let pfURL = URL(string: "parrotflow://") else { return }
+        NSWorkspace.shared.open(pfURL)
     }
 }
