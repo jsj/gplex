@@ -12,8 +12,12 @@
 		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>google.com</string>
+			</array>
 			<key>Level</key>
-			<string>None</string>
+			<string>All</string>
 		</dict>
 		<key>SFSafariToolbarItem</key>
 		<dict>
