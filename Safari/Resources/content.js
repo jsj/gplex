@@ -34,7 +34,7 @@ const hijack = () => {
             cloneA.removeAttribute('jsaction');
             
             let query = document.URL.split("?q=")[1];
-            cloneA.href = `https://perplexity.ai/search/?q=${query}`;
+            cloneA.href = `https://gplexapp.com/search/?q=${query}`;
             
             //cloneA.href = `parrotflow://?q=`;
             const cloneSpan = cloneA.querySelector('span');
