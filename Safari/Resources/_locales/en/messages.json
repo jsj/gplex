@@ -1,10 +1,8 @@
 {
     "extension_name": {
-        "message": "Chat with Parrotflow",
-        "description": "Enable a \"Chat\" option on every Google Search result."
+        "message": "Gplex"
     },
     "extension_description": {
-        "message": "Chat with Parrotflow.",
-        "description": "Enable a \"Chat\" option on every Google Search result."
+        "message": "Enable a \"GENERATE ✨\" option on every Google Search result."
     }
 }

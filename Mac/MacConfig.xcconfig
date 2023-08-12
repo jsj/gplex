@@ -1,6 +1,6 @@
 //
 //  Config.xcconfig
-//  Parrotflow
+//  Gplex
 //
 //  Created by James Jackson on 8/1/23.
 //
@@ -19,6 +19,6 @@ MARKETING_VERSION = 1.0.10
 // ===================
 CODE_SIGN_ENTITLEMENTS = Mac/Mac.entitlements
 GENERATE_INFOPLIST_FILE = YES
-PRODUCT_NAME = Parrotflow
+PRODUCT_NAME = Gplex
 PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.mac
-INFOPLIST_FILE = Parrotflow/Info.plist
+INFOPLIST_FILE = Gplex/Info.plist

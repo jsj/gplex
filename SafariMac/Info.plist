@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Parrotflow</string>
+	<string>Gplex</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
@@ -24,10 +24,10 @@
 			<key>Image</key>
 			<string>ToolbarItemIcon.png</string>
 			<key>Label</key>
-			<string>Parrotflow</string>
+			<string>Gplex</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableDescription</key>
-	<string>Chat with AI</string>
+	<string>Generate a response to your search result.</string>
 </dict>
 </plist>

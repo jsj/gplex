@@ -1,0 +1,23 @@
+//
+//  Config.xcconfig
+//  Gplex
+//
+//  Created by James Jackson on 7/1/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// ===================
+// Versioning
+// ===================
+CURRENT_PROJECT_VERSION = 1
+MARKETING_VERSION = 1.0.10
+
+// ===================
+// Packaging
+// ===================
+GENERATE_INFOPLIST_FILE = YES
+PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = com.parrotflow.mac
+INFOPLIST_FILE = Gplex/Info.plist

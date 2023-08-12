@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  Safari
+//  Gplex
 //
 //  Created by James Jackson on 7/21/23.
 //
