@@ -1,6 +1,6 @@
 # Gplex ✨🧠🔎
 
-> Generate ✨ an answer to your search result.
+> Generate ✨ results
 
 [![download-app](/.README/assets/badges/download-app.svg)](https://gplexapp.com)
 [![google](/.README/assets/badges/google.svg)](https://gplexapp.com)
